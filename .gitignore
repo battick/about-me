@@ -10,3 +10,9 @@
 .DS_Store
 Thumbs.db
 Desktop.ini
+node_modules/
+dist/
+.npm-cache/
+playwright-report/
+test-results/
+.qa/

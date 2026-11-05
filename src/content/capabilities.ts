@@ -1,0 +1,38 @@
+export const capabilities = [
+  {
+    number: "01",
+    title: "界面与交互",
+    english: "INTERFACE",
+    description: "让想法拥有清晰的界面，也让每一次点击得到回应。",
+    tags: ["React", "CSS", "Accessibility"],
+    evidence: "/projects/dark-lab",
+    label: "查看网站界面实现",
+  },
+  {
+    number: "02",
+    title: "系统与工程",
+    english: "ENGINEERING",
+    description: "从内容模型到部署流程，关注代码背后的组织方式。",
+    tags: ["TypeScript", "Vite", "GitHub Actions"],
+    evidence: "/projects/dark-lab",
+    label: "查看工程结构",
+  },
+  {
+    number: "03",
+    title: "算法与问题求解",
+    english: "PROBLEM SOLVING",
+    description: "把大问题拆成小步骤，持续寻找更清楚的解法。",
+    tags: [],
+    evidence: "",
+    label: "",
+  },
+  {
+    number: "04",
+    title: "协作与表达",
+    english: "COMMUNICATION",
+    description: "记录选择的理由，让想法能够被理解、被讨论、被延续。",
+    tags: ["Documentation", "Git"],
+    evidence: "/projects/dark-lab",
+    label: "查看项目记录",
+  },
+];

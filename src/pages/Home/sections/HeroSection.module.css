@@ -1,0 +1,147 @@
+.hero {
+  position: relative;
+  min-height: max(820px, 100svh);
+  overflow: hidden;
+  background: #080a0d;
+}
+.art {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  inset: 0;
+}
+.shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, #080a0de0 0%, #080a0d85 35%, #080a0d00 65%),
+    linear-gradient(0deg, #080a0d, transparent 28%);
+}
+.inner {
+  position: relative;
+  padding-top: clamp(200px, 25vh, 320px);
+  padding-bottom: 120px;
+}
+.label {
+  margin-bottom: 32px;
+}
+.inner h1 {
+  font-size: clamp(80px, 8.8vw, 160px);
+  line-height: 1.13;
+  letter-spacing: -0.065em;
+  animation: enter 1s var(--ease) both;
+}
+.inner h1 > span {
+  color: var(--text);
+}
+.intro {
+  max-width: 375px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 2;
+  margin-top: 30px;
+  animation: enter 1s 0.15s var(--ease) both;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: clamp(80px, 13vh, 180px);
+  font:
+    10px/1.9 Consolas,
+    monospace;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}
+.bottom > span {
+  text-align: right;
+}
+.bottom b {
+  font-weight: 400;
+  color: #d1d6df;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+}
+.bottom button {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  font-size: 11px;
+  padding: 8px 0;
+}
+.bottom button span {
+  color: var(--blue);
+  font-size: 20px;
+}
+.pause {
+  position: absolute;
+  right: var(--gutter);
+  bottom: 105px;
+  border: 1px solid var(--line);
+  padding: 8px 12px;
+  font-size: 11px;
+}
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (min-width: 2000px) {
+  .art {
+    object-fit: cover;
+  }
+}
+@media (max-width: 900px) {
+  .hero {
+    min-height: 850px;
+  }
+  .art {
+    object-position: 58% center;
+  }
+  .inner h1 {
+    font-size: 90px;
+  }
+  .shade {
+    background:
+      linear-gradient(90deg, #080a0dd9, #080a0d30),
+      linear-gradient(0deg, #080a0d, transparent 50%);
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    min-height: max(760px, 100svh);
+  }
+  .inner {
+    padding-top: 190px;
+    padding-bottom: 48px;
+  }
+  .inner h1 {
+    font-size: clamp(56px, 13vw, 78px);
+  }
+  .art {
+    object-position: 61% center;
+    opacity: 0.58;
+  }
+  .intro {
+    max-width: 300px;
+    font-size: 13px;
+  }
+  .label {
+    font-size: 9px;
+  }
+  .bottom {
+    margin-top: 100px;
+    gap: 20px;
+    font-size: 8px;
+  }
+  .bottom b {
+    font-size: 10px;
+  }
+}

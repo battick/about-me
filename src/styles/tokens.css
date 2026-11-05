@@ -1,0 +1,12 @@
+:root {
+  --bg: #080a0d;
+  --surface: #11151b;
+  --text: #f2f4f7;
+  --muted: #a3abb8;
+  --blue: #77a7ff;
+  --line: #ffffff1c;
+  --width: 1700px;
+  --gutter: clamp(24px, 4.2vw, 80px);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  color-scheme: dark;
+}

@@ -1,0 +1,38 @@
+body {
+  font-family: Inter, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-synthesis: none;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h1,
+h2 {
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 1.15;
+}
+h2 {
+  font-size: clamp(36px, 4.7vw, 76px);
+}
+h3 {
+  font-size: clamp(24px, 2.5vw, 36px);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+.eyebrow {
+  font-family: Consolas, "SFMono-Regular", monospace;
+  font-size: 11px;
+  line-height: 1.8;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+.eyebrow span,
+.blue {
+  color: var(--blue);
+}
+p {
+  line-height: 1.9;
+}
